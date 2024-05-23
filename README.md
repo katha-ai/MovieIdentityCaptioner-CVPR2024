@@ -1,7 +1,7 @@
 # MICap: A Unified Model for Identity-aware Movie Descriptions
 
 
-[![Paper](https://img.shields.io/badge/arXiv-1234.56789-B31B1B.svg)](https://arxiv.org/abs/2405.11483)
+[![Paper](https://img.shields.io/badge/arXiv-2405.11483-B31.svg)](https://arxiv.org/abs/2405.11483)
 [![Project Page](https://img.shields.io/badge/project-MICap-green)](https://katha-ai.github.io/projects/micap/)
                                     <a href="https://huggingface.co/spaces/dnaveenr/iSPICE-Metric">
                                         <img alt="Spaces"

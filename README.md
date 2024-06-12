@@ -38,11 +38,15 @@ The `run_type` flag in the `config_base.yaml` file can be adjusted to determine 
 
 Make sure the `overfit` and `checkpoint` flags are set to `False`. Also, ensure the path relative to the features from the data directory is correctly set in the `config_base.yaml` file.
 
+Once the yaml file is set run the command:`python train_mod.py`
+
 ## Evaluation
 
 To evaluate a pretrained model, set the `checkpoint` flag to `True` in the `config_base.yaml` file.
 
 The `run_type` flag in the `config_base.yaml` file can be adjusted to specify the task for evaluation.
+
+Once the yaml file is set run the command:`python train_mod.py`
 
 
 ## Citation

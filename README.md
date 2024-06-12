@@ -12,15 +12,37 @@
 
 This repository contains the official code for CVPR 2024 paper "MICap: A Unified Model for Identity-aware Movie Descriptions". 
 
-Code and implementation details coming soon ...
+![Teaser Image](assets/Teaser.jpeg)
 
 ## Installation
+
+Run the following commands to clone the repository
+```
+git clone https://github.com/katha-ai/MovieIdentityCaptioner-CVPR2024.git
+cd MovieIdentityCaptioner-CVPR2024
+```
+
+#### Environment
+
+Install the required conda environment by running the following command:
+`conda env create -f conda_env.yml`
+
+#### Data
+
+Details Coming soon....
 
 
 ## Training
 
+The `run_type` flag in the `config_base.yaml` file can be adjusted to determine the task (either `fitb`, `fc` only, or both) for training MICap.
+
+Make sure the `overfit` and `checkpoint` flags are set to `False`. Also, ensure the path relative to the features from the data directory is correctly set in the `config_base.yaml` file.
 
 ## Evaluation
+
+To evaluate a pretrained model, set the `checkpoint` flag to `True` in the `config_base.yaml` file.
+
+The `run_type` flag in the `config_base.yaml` file can be adjusted to specify the task for evaluation.
 
 
 ## Citation

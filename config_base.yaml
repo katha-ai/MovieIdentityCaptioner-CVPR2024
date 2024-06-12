@@ -1,0 +1,54 @@
+data_dir: "" # directory where data is stored
+track: True # "True" if you want to track the model using wandb
+run_name: "" 
+run_type: "joint" # one of ["joint", "fitb", "fc"]
+input_json: # json file containing the caption data
+save_path: # directory where the model is saved
+
+seed: 0
+learning_rate: 5e-5
+batch_size: 16
+pre_nepoch: 30 # number of epochs
+
+
+# feature directories (all relative to the data_dir)
+input_fc_dir: # path to action features
+input_clip_dir: # path to clip features
+input_arc_face_dir: # path to arc_face features
+input_arc_face_clusters: # path to cluster indexes for face features
+use_bert_embedding: True # whether to use bert embeddings (features are large, so set to false when debugging)
+bert_embedding_dir: # path to bert embeddings
+fc_feat_size: 1024
+
+# additonal files
+input_label_h5: # path to h5 file of labels
+
+# Model settings
+encoding_size: 512
+tokenizer_path: # path to tokenizer (relative to data_dir)
+bert_size: 1536
+nvid: 5
+nsegments: 5
+max_sent_num: 5 
+
+
+# optimizer settings
+optim: "adam"
+optim_alpha: 0.9
+optim_beta: 0.999
+optim_epsilon: 1e-8
+weight_decay: 0
+grad_clip: 0.1
+
+# overfit run
+overfit: False # whether to run the model on a small subset of data as sanity check
+
+# checkpoint settings
+use_checkpoint: False # whether to use a checkpoint
+ckpt_path: # path to checkpoint (relative to data_dir)
+
+# Fillin metric options (don't change)
+split: "val"
+val_id: ""
+eval_accuracy: 1
+

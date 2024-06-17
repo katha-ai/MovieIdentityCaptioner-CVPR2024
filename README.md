@@ -54,12 +54,11 @@ Once the yaml file is set run the command:`python train_mod.py`
 Please consider citing our paper if the project helps your research with the following BibTex:
 
 ```bibtex
-@InProceedings{Raajesh_2024_CVPR,
-    author    = {Raajesh, Haran and Desanur, Naveen Reddy and Khan, Zeeshan and Tapaswi, Makarand},
-    title     = {MICap: A Unified Model for Identity-Aware Movie Descriptions},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {14011-14021}
+@inproceedings{raajesh2024micap,
+  title={MICap: A Unified Model for Identity-aware Movie Descriptions},
+  author={Raajesh, Haran and Desanur, Naveen Reddy and Khan, Zeeshan and Tapaswi, Makarand},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={14011--14021},
+  year={2024}
 }
 ```

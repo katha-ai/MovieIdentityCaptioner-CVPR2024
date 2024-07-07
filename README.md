@@ -29,7 +29,24 @@ Install the required conda environment by running the following command:
 
 #### Data
 
-Details Coming soon....
+Create a micap_data folder and fill in the path to this folder at the `data_dir` flag in the config_base.yaml file. Now for all the folders below, except for the SPICE Jar file and the Checkpoints, place them in the micap_data folder and put there relative paths into the config file at their specified locations in the instructions column.
+
+| Features | Instructions |
+|----------|--------------|
+|[Clip Features](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/ETH_bgkuH-FOgiUoMXuhDcMBkJ7TcvrQL1id7HTSTiCPEQ?e=S8IHii) | The unzipped folder path should be filled in for the `input_clip_dir` flag in the config_base.yaml file |
+|[Face Features](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/EQhRu4V9yatIuDGyeUICjDUBv8T5r2vUsvIFWA53rXb3CQ?e=1B2cbN) | The unzipped folder path should be filled in for the `input_arc_face_dir` flag in the config_base.yaml file | 
+|[I3D Features](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/EU9LlbqSP_JEkkuJd_7Xgk8BUfh33ghPmW27jhhFYPptLw?e=CrlP1U) | The unzipped folder path should be filled in for the `input_fc_dir` flag in the config_base.yaml file |  
+|[Face Clusters](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/Ea2BK4_lp3BNoUnxnX57M3MBwaMdfnRbU6MjYESBL3P21A?e=FqrAx4) | The unzipped file path should be filled in for the `input_arc_face_clusters` flag in the config_base.yaml file | 
+|[MICap Json](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/EZg9FSWZZqJKoI5EmzhSqk4B_TnhRIcZuD907XYZweB62w?e=zLVTP6) | The unzipped file path should be filled in for the `input_json` flag in the config_base.yaml file | 
+|[Bert Text Embeddings](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/EatlrXrRRWBKsexO-t7ULi4BQWIzVEyTp3Dkwclc_BQajw?e=5yIpfc) | The unzipped folder path (`fillin_data/bert_text_gender_embedding`) should be filled in for the `bert_embedding_dir` flag in the config_base.yaml file |
+|[H5 label file](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/ESf1AOoS0sVKmRmjxQu3bGQBMuDt4QRombNM2iDp8gyuoA?e=7cSyPg) | The unzipped file path (`LSMDC16_labels_fillin_new_augmented.h5`) should be filled in for the `input_label_h5` flag in the config_base.yaml file |
+|[Tokenizer](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/EXkSXooDp2xGrROjSdylRMUBQOszEOm4KI__j69AHEFeNg?e=cX8i0O) | The unzipped folder path should be filled in for the `tokenizer_path` flag in the config_base.yaml file |
+|[SPICE Jar file](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/haran_raajesh_students_iiit_ac_in/EZkBQQvVlpBNvZAZvYGt6_YB8_-PC47U81gz7ecH2VdQ0A?e=gUsdya) | The unzipped file path should be placed in the `iSPICE` directory |
+|[Checkpoints](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/haran_raajesh_students_iiit_ac_in/EjXK2hp3pUdFhkuoIuwGijgBtGLV23-DW5eIn2IfWzeVCg?e=9eZn6F) | Folder that contains the various checkpoints for full captioning and joint training full captioning (cider score) and fitb and joint training fitb (class accuracy)|
+
+
+
+
 
 
 ## Training
